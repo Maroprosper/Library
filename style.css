@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --field-height: calc(100vh/3);
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+.show-case{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+.bookCard{
+    width: '';
+    display: inline-block;
+    background-color: black;
+    margin-left: 20px;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.pop-up div{
+    display: flex;
+    flex-direction: column;
+}
+.pop-up{
+    width: 33%;
+    margin: auto;
+    height: var(--field-height);
+    position: absolute;
+    left: calc(70vw/2);
+    top: calc((100vh - var(--field-height))/1.5);
+    z-index: 1;
+}

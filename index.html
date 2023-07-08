@@ -9,25 +9,27 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1>Library</h1>
+        <div><button>Add book</button></div>
+    </header>
     <main>
-        <section></section>
-        <section>
+        <section class="show-case"></section>
+        <section class="pop-up">
             <form>
                 <div>
-                    <label for=""></label>
-                    <input type="text" name="" id="">
-                    <label for=""></label>
-                    <input type="text" name="" id="">
-                    <label for=""></label>
-                    <input type="text" name="" id="">
-                    <label for=""></label>
-                    <input type="text" name="" id="">
-                    <label for=""><input type="checkbox" name="" id=""></label> 
+                    <label for="book-title"></label>
+                    <input type="text" name="book-title" id="book-title">
+                    <label for="book-author"></label>
+                    <input type="text" name="book-author" id="book-author">
+                    <label for="book-pages"></label>
+                    <input type="numeric" name="book-pages" id="book-pages">
+                    <label for="book-status"><input type="checkbox" name="book-status" id="book-status"></label>
+                    <button type="submit" id="submit-book">Submit</button> 
                 </div>
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer>Love, TechBros</footer>
 </body>
 </html>
