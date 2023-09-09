@@ -84,8 +84,8 @@ input, label{
 }
 input{
     background-color: #f8f9fa;
-    border: 1vw solid #212529;
-    border-radius: 2vw;
+    border: 1px solid #212529;
+    border-radius: 3vw;
     padding: 2px 1px;
 }
 @media screen and (min-width: 480px) {
