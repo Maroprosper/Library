@@ -2,27 +2,29 @@ let bookCase = [];
 let index = 0;
 const display = document.querySelector('.show-case');
 const popBox = document.querySelector('.pop-up');
-function book(title, author, pages, readStatus, statusBtn, index){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.readStatus = readStatus;
-    this.statusBtn = statusBtn;
-    this.index = index;
+class book{
+    constructor(title, author, pages, readStatus, statusBtn, index){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.readStatus = readStatus;
+        this.statusBtn = statusBtn;
+        this.index = index;
+    }
+    changeStatus = function(){
+        if(this.readStatus === 'Read' && this.statusBtn === 'green'){
+            this.readStatus = 'Not Read';
+            this.statusBtn = 'red'
+    }
+        else{
+            this.readStatus = 'Read';
+            this.statusBtn = 'green'
+    }
+    }
+    updateIndex = function(){
+        this.index = 0;
+} 
 }
-book.prototype.changeStatus = function(){
-    if(this.readStatus === 'Read' && this.statusBtn === 'green'){
-        this.readStatus = 'Not Read';
-        this.statusBtn = 'red'
-    }
-    else{
-        this.readStatus = 'Read';
-        this.statusBtn = 'green'
-    }
-};
-book.prototype.updateIndex = function(){
-    this.index = 0;
-};
 function removeBook(index){
     bookCase.splice(index, 1);
 }
